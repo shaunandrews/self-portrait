@@ -1,0 +1,88 @@
+/*
+Theme Name: shaunandrews
+Theme URI:
+Author: Shaun Andrews
+Author URI: https://shaunandrews.com
+Description:
+Tags:
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shaunandrews
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body {
+  background: #bd153e;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-title {
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: lowercase;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.site-title a {
+  display: block;
+  text-decoration: none;
+  padding: 6px 12px;
+}
+
+.site-navigation {
+  margin-left: 138px;
+}
+.site-navigation .wp-block-navigation-link__content {
+  color: #ffffff;
+  padding: 6px 12px;
+  text-decoration: underline;
+}
+
+.site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  font-size: 14px;
+  background: #160009;
+}
+.site-footer p {
+  margin: 0 0 12px 0;
+}
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.layout-primary {
+  max-width: 520px;
+  margin: 30px 30px 30px 150px;
+}
+
+.page-heading {
+  margin-bottom: 60px;
+}
+.page-heading h2 {
+  font-size: 38px;
+  margin: 0 0 6px;
+}
+.page-heading h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
