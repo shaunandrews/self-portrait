@@ -1,0 +1,10 @@
+.site-navigation {
+    //margin-left: 150px - 12;
+  
+    // Resets I shouldn't have to do
+    .wp-block-navigation-link__content {
+      color: $color-link-resting;
+      padding: 6px 12px;
+      text-decoration: underline;
+    }
+}

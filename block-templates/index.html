@@ -1,16 +1,29 @@
-<!-- wp:template-part {
-  "slug":"header",
-  "theme":"shaunandrews"
-} /-->
+<!-- wp:group {"className":"layout-container"} -->
+<div class="wp-block-group layout-container"><div class="wp-block-group__inner-container">
 
-<div class="layout-primary">
-<!-- wp:query-loop -->
-  <!-- wp:post-title /-->
-  <!-- wp:post-content /-->
-<!-- /wp:query-loop -->
-</div>
+	<!-- wp:group {"className":"layout-main"} -->
+	<div class="wp-block-group layout-main"><div class="wp-block-group__inner-container">
 
-<!-- wp:template-part {
-  "slug":"footer",
-  "theme":"shaunandrews"
-} /-->
+		<!-- wp:template-part {
+			"slug":"header",
+			"theme":"shaunandrews",
+			"className":"layout-sidebar"
+		} /-->
+
+		<!-- wp:template-part {
+			"slug":"content",
+			"theme":"shaunandrews",
+			"className":"layout-primary"
+		} /-->
+
+	</div></div>
+	<!-- /wp:group -->
+
+	<!-- wp:template-part {
+		"slug":"footer",
+		"theme":"shaunandrews",
+		"className":"layout-footer"
+	} /-->
+
+</div></div>
+<!-- /wp:group -->

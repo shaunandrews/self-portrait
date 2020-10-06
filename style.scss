@@ -23,85 +23,90 @@ $color-dark: #160009;
 $color-text: #ffffff;
 $color-link-resting: #ffffff;
 
+@import 'block-template-parts/navigation/style.scss';
+
+// Editor Specific Non-sense
+h1, h2, h3, h4, h5, h6,
+.block-editor-block-list__layout .wp-block,
+.block-editor-block-list__block {
+	margin: 0 !important;
+}
+
+.editor-styles-wrapper {
+	min-height: calc( 100vh - 48px );
+}
+
+// The real stuff
 body {
-  background: $color-spot;
-  color: $color-text;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 20px;
+	background: $color-spot;
+	color: $color-text;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  color: $color-link-resting;
-  text-decoration: underline;
+	color: $color-link-resting;
+	text-decoration: underline;
 }
-
 
 // Header
 .site-title {
   font-weight: 800;
   font-size: 24px;
   text-transform: lowercase;
-  position: fixed;
-  top: 20px;
-  left: 20px;
+  //position: fixed;
+  //top: 20px;
+  //left: 20px;
 
   a {
-    display: block;
-    text-decoration: none;
-    padding: 6px 12px;
-  }
-}
-
-.site-navigation {
-  margin-left: 150px - 12;
-
-  // Resets I shouldn't have to do
-  .wp-block-navigation-link__content {
-    color: $color-link-resting;
-    padding: 6px 12px;
-    text-decoration: underline;
-  }
-}
-
-
-// Footer
-.site-footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 12px;
-  font-size: 14px;
-  background: $color-dark;
-
-  p {
-    margin: 0 0 12px 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+	display: block;
+	text-decoration: none;
+	padding: 6px 12px;
   }
 }
 
 // Layout
-.layout-primary {
-  max-width: 520px;
-  margin: 30px 30px 30px 150px;
+.layout-container > .wp-block-group__inner-container {
+	display: flex;
+	flex-direction: column;
 }
 
+.layout-main {
+	flex-grow: 1;
+
+	.wp-block-group__inner-container {
+		display: flex;
+	}
+}
+
+.layout-footer {
+	padding: 12px;
+	font-size: 14px;
+	background: $color-dark;
+
+	p {
+		margin: 0 0 12px 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
 
 // Page heading
 .page-heading {
   margin-bottom: 60px;
 
   h2 {
-    font-size: 38px;
-    margin: 0 0 6px;
+	font-size: 38px;
+	margin: 0 0 6px;
   }
 
   h3 {
-    font-size: 30px;
-    font-weight: normal;
-    margin: 0;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0;
   }
 }
