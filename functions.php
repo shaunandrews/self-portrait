@@ -29,6 +29,6 @@ endif;
 add_action( 'after_setup_theme', 'shaunandrews_setup' );
 
 function shaunandrews_scripts() {
-    wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null );
+    wp_enqueue_style( 'style', get_stylesheet_uri(), array(), '2' );
 }
 add_action( 'wp_enqueue_scripts', 'shaunandrews_scripts' );
